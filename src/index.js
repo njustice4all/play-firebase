@@ -29,6 +29,34 @@ const setApple = appleRef.set({
   color: 'black',
 });
 
+const lgRef = db.collection('phone').doc('lg');
+
+const setLg = lgRef.set({
+  brand: 'lg',
+  device: 'G6',
+  color: 'white',
+  favorites: [
+    {
+      name: 'online',
+      score: 10,
+    },
+    {
+      name: 'offline',
+      score: 5,
+    },
+  ],
+});
+
+// overwrite 가능
+phoneRef.set({
+  brane: 'lg',
+  device: 'g6',
+  battery: {
+    high: 2,
+    low: 1,
+  },
+});
+
 // get data
 db
   .collection('phone')
