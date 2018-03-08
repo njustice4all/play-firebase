@@ -1,3 +1,2 @@
-import day1 from './day1';
-
-day1();
+// import './day1';
+import './day2';
