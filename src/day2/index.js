@@ -1,38 +1,40 @@
-import getAdmin from '../../config/getAdmin';
-
-const db = getAdmin();
+import { database as db } from '../../config/firebaseInitialize';
 
 const citiesRef = db.collection('cities');
 
-const setSf = citiesRef.doc('SF').set({
+citiesRef.doc('SF').set({
   name: 'San Francisco',
   state: 'CA',
   country: 'USA',
   capital: false,
   population: 860000,
 });
-const setLa = citiesRef.doc('LA').set({
+
+citiesRef.doc('LA').set({
   name: 'Los Angeles',
   state: 'CA',
   country: 'USA',
   capital: false,
   population: 3900000,
 });
-const setDc = citiesRef.doc('DC').set({
+
+citiesRef.doc('DC').set({
   name: 'Washington, D.C.',
   state: null,
   country: 'USA',
   capital: true,
   population: 680000,
 });
-const setTok = citiesRef.doc('TOK').set({
+
+citiesRef.doc('TOK').set({
   name: 'Tokyo',
   state: null,
   country: 'Japan',
   capital: true,
   population: 9000000,
 });
-const setBj = citiesRef.doc('BJ').set({
+
+citiesRef.doc('BJ').set({
   name: 'Beijing',
   state: null,
   country: 'China',
@@ -54,14 +56,24 @@ const setBj = citiesRef.doc('BJ').set({
 //     console.log('Error getting document', err);
 //   });
 
-const query = citiesRef
-  .where('capital', '==', true)
-  .get()
-  .then(snapshot => {
-    snapshot.forEach(doc => {
-      console.log(doc.id, '=>', doc.data());
-    });
-  })
-  .catch(err => {
-    console.log('Error getting documents', err);
+// citiesRef
+//   .where('capital', '==', true)
+//   .get()
+//   .then(snapshot => {
+//     snapshot.forEach(doc => {
+//       console.log(doc.id, '=>', doc.data());
+//     });
+//   })
+//   .catch(err => {
+//     console.log('Error getting documents', err);
+//   });
+
+// Create a query against the collection
+const queryRef = citiesRef.where('state', '==', 'CA');
+// where('capital', '==', true) 모든 수도 반환
+
+queryRef.get().then(snapshot => {
+  snapshot.forEach(doc => {
+    console.log(doc.id, doc.data());
   });
+});
