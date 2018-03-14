@@ -1,6 +1,6 @@
-import { database as db } from '../../config/firebaseInitialize';
+import { database } from '../../config/firebaseInitialize';
 
-const citiesRef = db.collection('cities');
+const citiesRef = database.collection('cities');
 
 citiesRef.doc('SF').set({
   name: 'San Francisco',

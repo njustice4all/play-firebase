@@ -75,7 +75,7 @@
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.1.2.tgz#a20cb346e3be374c0bdee6b102de0ea5e8e6fa27"
 
-"@firebase/app@0.1.10", "@firebase/app@^0.1.10":
+"@firebase/app@^0.1.10":
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.1.10.tgz#fc80c62dbe4d601cad1495bc095309adb9074f85"
   dependencies:
@@ -83,33 +83,9 @@
     "@firebase/util" "0.1.10"
     tslib "^1.9.0"
 
-"@firebase/auth-types@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@firebase/auth-types/-/auth-types-0.1.2.tgz#15415ed12b038356f79f22f9059002a29873a15a"
-
-"@firebase/auth@0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@firebase/auth/-/auth-0.3.4.tgz#79dd0b9d86d51fd6874fa2fff2e3c06ceef07d41"
-  dependencies:
-    "@firebase/auth-types" "0.1.2"
-
 "@firebase/database-types@0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@firebase/database-types/-/database-types-0.1.2.tgz#c6a23b8aa721ca16951c752430167ee764659916"
-
-"@firebase/database-types@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@firebase/database-types/-/database-types-0.2.0.tgz#c442af71e4c376e6bb78f6aa62645b5a0e2b87b6"
-
-"@firebase/database@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.2.0.tgz#43fe1c022d30e2a6aff1e0832f1e7d9e3286b05c"
-  dependencies:
-    "@firebase/database-types" "0.2.0"
-    "@firebase/logger" "0.1.0"
-    "@firebase/util" "0.1.10"
-    faye-websocket "0.11.1"
-    tslib "^1.9.0"
 
 "@firebase/database@^0.1.11":
   version "0.1.11"
@@ -120,63 +96,11 @@
     faye-websocket "0.11.1"
     tslib "^1.9.0"
 
-"@firebase/firestore-types@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@firebase/firestore-types/-/firestore-types-0.2.2.tgz#e60b6c7a458538b1bf8ed89d9df981fa17a74871"
-
-"@firebase/firestore@0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@firebase/firestore/-/firestore-0.3.5.tgz#071e6ae65cf88655d32f499149d4f730a2ecfd37"
-  dependencies:
-    "@firebase/firestore-types" "0.2.2"
-    "@firebase/logger" "0.1.0"
-    "@firebase/webchannel-wrapper" "0.2.6"
-    grpc "^1.9.1"
-    tslib "^1.9.0"
-
-"@firebase/logger@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@firebase/logger/-/logger-0.1.0.tgz#0a7b3af8a43e4b48cc9b16e518c07d8a2ea290e8"
-
-"@firebase/messaging-types@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@firebase/messaging-types/-/messaging-types-0.1.2.tgz#4975eeb31db0a16a9fcc7b9afb2ff60f79160c46"
-
-"@firebase/messaging@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@firebase/messaging/-/messaging-0.2.2.tgz#4ff4d1a37fb3251b97f9c2614ac1604b55e2b994"
-  dependencies:
-    "@firebase/messaging-types" "0.1.2"
-    "@firebase/util" "0.1.10"
-    tslib "^1.9.0"
-
-"@firebase/polyfill@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@firebase/polyfill/-/polyfill-0.2.0.tgz#8c0733d9192b840f098e084efb62a3eb53491882"
-  dependencies:
-    promise-polyfill "^7.1.0"
-    tslib "^1.9.0"
-
-"@firebase/storage-types@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@firebase/storage-types/-/storage-types-0.1.2.tgz#682a60117ff51ab861830727fb7b52f7998701fd"
-
-"@firebase/storage@0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@firebase/storage/-/storage-0.1.8.tgz#81a71de873130184446f07c813f882fd168cd524"
-  dependencies:
-    "@firebase/storage-types" "0.1.2"
-    tslib "^1.9.0"
-
 "@firebase/util@0.1.10":
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/@firebase/util/-/util-0.1.10.tgz#7898f6e36c8231c287c4024c313000df677b1363"
   dependencies:
     tslib "^1.9.0"
-
-"@firebase/webchannel-wrapper@0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.6.tgz#a4b81ca8cdeb1acbc7923289a4a514f61b59db86"
 
 "@google-cloud/common-grpc@^0.5.3":
   version "0.5.5"
@@ -2198,10 +2122,6 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-storage@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/dom-storage/-/dom-storage-2.0.2.tgz#ed17cbf68abd10e0aef8182713e297c5e4b500b0"
-
 dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
@@ -2760,20 +2680,6 @@ firebase-admin@^5.9.1:
     jsonwebtoken "8.1.0"
     node-forge "0.7.1"
 
-firebase@^4.11.0:
-  version "4.11.0"
-  resolved "https://registry.yarnpkg.com/firebase/-/firebase-4.11.0.tgz#e6767df3f6e208b0c58ef53130609392b765df99"
-  dependencies:
-    "@firebase/app" "0.1.10"
-    "@firebase/auth" "0.3.4"
-    "@firebase/database" "0.2.0"
-    "@firebase/firestore" "0.3.5"
-    "@firebase/messaging" "0.2.2"
-    "@firebase/polyfill" "0.2.0"
-    "@firebase/storage" "0.1.8"
-    dom-storage "^2.0.2"
-    xmlhttprequest "^1.8.0"
-
 first-chunk-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-2.0.0.tgz#1bdecdb8e083c0664b91945581577a43a9f31d70"
@@ -3226,15 +3132,6 @@ grouped-queue@^0.3.0, grouped-queue@^0.3.3:
   resolved "https://registry.yarnpkg.com/grouped-queue/-/grouped-queue-0.3.3.tgz#c167d2a5319c5a0e0964ef6a25b7c2df8996c85c"
   dependencies:
     lodash "^4.17.2"
-
-grpc@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/grpc/-/grpc-1.9.1.tgz#18d7cfce153ebf952559e62dadbc8bbb85da1eac"
-  dependencies:
-    lodash "^4.15.0"
-    nan "^2.0.0"
-    node-pre-gyp "^0.6.39"
-    protobufjs "^5.0.0"
 
 grpc@~1.7.2:
   version "1.7.3"
@@ -5130,10 +5027,6 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
-promise-polyfill@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-7.1.0.tgz#4d749485b44577c14137591c6f36e5d7e2dd3378"
-
 protobufjs@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-5.0.2.tgz#59748d7dcf03d2db22c13da9feb024e16ab80c91"
@@ -6711,10 +6604,6 @@ write@^0.2.1:
 xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
-
-xmlhttprequest@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz#67fe075c5c24fef39f9d65f5f7b7fe75171968fc"
 
 xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.0, xtend@~4.0.1:
   version "4.0.1"
